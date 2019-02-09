@@ -3,7 +3,7 @@
 <head>
 <title>Punk Out Beers</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <!-- libs styles -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +39,7 @@
 					<a class="nav-link beers" href="#beers">Our Brews</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link home" href="#">Where To Buy</a>
+					<a class="nav-link home" href="#" data-toggle="modal" data-target="#myModal">Where To Buy</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link contact" href="#" data-toggle="modal" data-target="#myModal">Contact</a>
@@ -71,12 +71,12 @@
 
 				<div class="form-group text-center">
 
-					<img src="images/icon_mailing_list.svg" style="width: 50px; margin-bottom: 10px;" alt="Mail">
+					<img src="images/icon_mailing_list.svg" class="icon-mailing-list" alt="Mail">
 
-					<label for="email" style="font-size: 12px; line-height: 16px; margin-bottom: 10px" class="text-left">Sign up and we’ll send you info about exclusive beer premieres, festivals we’ll be at, and special promotions!</label>
-					<input type="email" class="form-control" id="email" placeholder="beerafficionado@rockstar.com" name="email" style="font-size: 12px; line-height: 16px; margin-bottom: 10px">
+					<label for="email" class="text-left">Sign up and we’ll send you info about exclusive beer premieres, festivals we’ll be at, and special promotions!</label>
+					<input type="email" class="form-control" id="email" placeholder="beerafficionado@rockstar.com" name="email">
 
-					<button type="submit" class="btn btn-dark" data-toggle="modal" data-target="#myModal" style="width: 50%; border-radius: 0; font-weight: normal; font-size: 14px;">HECK YES!</button>
+					<button type="submit" class="btn btn-dark heck-yes" data-toggle="modal" data-target="#myModal">HECK YES!</button>
 
 				</div>
 
@@ -97,7 +97,7 @@
 			</div>
 
 			<div class="modal-body">
-				<p>Thanks for clicking. This isn't a real web site, so it's not all working. If this was a real web site, this would be functional. </p> <p>Did you know that Dan is a big fan of Cisco and Talos? Dan also lives in Columbia, and likes in-person interviews and discussing front-end development. Just&nbsp;saying.</p>
+				<p>Thanks for clicking. This isn't a real web site so it's not all working. If this was a real web site, this would be functional. </p> <p>Did you know that Dan is a big fan of Cisco and Talos? Dan also lives in Columbia, and likes in-person interviews and discussing front-end development. Just&nbsp;saying.</p>
 			</div>
 
 			<div class="modal-footer">
@@ -115,11 +115,7 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-center navbar-custom mt-5 p-0">
 	<div class="container">
 
-		<a class="navbar-brand" href="#">The Set List</a>
-
-		<button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-		</button>
+		<a class="navbar-brand pl-1" href="#">The Set List</a>
 
 		<div class="collapse navbar-collapse justify-content-end" id="navbarContent">
 			<ul class="navbar-nav">
@@ -138,53 +134,69 @@
 
 						<!-- FILTER TERMS -->
 						<div class="row p-2 filter-flavors-row">
-							<div class="col-4">
+							<div class="col-3">
 								<input type="checkbox" id="check-hoppy" name="check-hoppy" value="hoppy">
 								<label class="text-white align-middle" for="check-hoppy">Hoppy</label>
 							</div>
-							<div class="col-4">
+							<div class="col-3">
 								<input type="checkbox" id="check-citrus" name="check-citrus" value="citrus">
 								<label class="text-white align-middle" for="check-citrus">Citrus</label>
 							</div>
-							<div class="col-4">
+							<div class="col-3">
 								<input type="checkbox" id="check-malty" name="check-malty" value="malty">
 								<label class="text-white align-middle" for="check-malty">Malty</label>
 							</div>
-							<div class="col-4">
+							<div class="col-3">
+								<input type="checkbox" id="check-malty" name="check-malty" value="malty">
+								<label class="text-white align-middle" for="check-malty">Herbal</label>
+							</div>
+							<div class="col-3">
 								<input type="checkbox" id="check-bitter" name="check-bitter" value="bitter">
 								<label class="text-white align-middle" for="check-bitter">Bitter</label>
 							</div>
-							<div class="col-4">
+							<div class="col-3">
 								<input type="checkbox" id="check-fruity" name="check-fruity" value="fruity">
 								<label class="text-white align-middle" for="check-fruity">Fruity</label>
 							</div>
-							<div class="col-4">
+							<div class="col-3">
 								<input type="checkbox" id="check-toasty" name="check-toasty" value="toasty">
 								<label class="text-white align-middle" for="check-toasty">Toasty</label>
 							</div>
-							<div class="col-4">
+							<div class="col-3">
+								<input type="checkbox" id="check-toasty" name="check-toasty" value="toasty">
+								<label class="text-white align-middle" for="check-toasty">Earthy</label>
+							</div>
+							<div class="col-3">
 								<input type="checkbox" id="check-sour" name="check-sour" value="sour">
 								<label class="text-white align-middle" for="check-sour">Sour</label>
 							</div>
-							<div class="col-4">
+							<div class="col-3">
 								<input type="checkbox" id="check-dry" name="check-dry" value="dry">
 								<label class="text-white align-middle" for="check-dry">Dry</label>
 							</div>
-							<div class="col-4">
+							<div class="col-3">
 								<input type="checkbox" id="check-caramel" name="check-caramel" value="caramel">
 								<label class="text-white align-middle" for="check-caramel">Caramel</label>
 							</div>
-							<div class="col-4">
+							<div class="col-3">
+								<input type="checkbox" id="check-caramel" name="check-caramel" value="caramel">
+								<label class="text-white align-middle" for="check-caramel">Smokey</label>
+							</div>
+							<div class="col-3">
 								<input type="checkbox" id="check-tart" name="check-tart" value="tart">
 								<label class="text-white align-middle" for="check-tart">Tart</label>
 							</div>
-							<div class="col-4">
+							<div class="col-3">
 								<input type="checkbox" id="check-crisp" name="check-crisp" value="crisp">
 								<label class="text-white align-middle" for="check-crisp">Crisp</label>
 							</div>
-							<div class="col-4">
+							<div class="col-3">
 								<input type="checkbox" id="check-toffee" name="check-toffee" value="toffee">
 								<label class="text-white align-middle" for="check-toffee">Toffee</label>
+							</div>
+							<div class="col-3">
+								<input type="checkbox" id="check-toffee" name="check-toffee" value="toffee">
+								<label class="text-white align-middle" for="check-toffee">Spicey</label>
 							</div>
 						</div>
 

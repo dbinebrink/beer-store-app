@@ -13,7 +13,6 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-weight: normal;
-	font-family: 'Catamaran', Arial;
 }
 body {
 	overflow-x: hidden;
@@ -27,17 +26,10 @@ h3 {
 	font-family: 'Bungee';
 	font-size: 1.2rem;
 }
-b, strong {
-	font-weight: bold;
-}
 div, p {
 	font-family: 'Catamaran';
 	font-weight: normal;
 }
-label {
-	font-size: 0.8rem; 
-}
-
 
 /* nav bar */
 nav {
@@ -66,7 +58,7 @@ nav ul li::before {
 }
 .navbar-custom .navbar-nav .nav-link {
 	color: #fff;
-	padding: 1rem 1rem;
+	padding: 1rem 1.4rem;
 	border-right: solid 1px #333;
 	font-size: 16px;
 	font-weight: bold;
@@ -114,6 +106,53 @@ ul li::before {
     list-style-type: none;
 }
 
+/* join our mailing list */
+div.row.join-list-top {
+	background: #333;
+}
+div.row.join-list-main {
+	background: #844389; 
+	padding: 10px 20px 10px;
+}
+label[for="email"] {
+	font-size: 12px; 
+	line-height: 16px; 
+	margin-bottom: 10px
+}
+input#email {
+	font-size: 12px; 
+	line-height: 16px; 
+	margin-bottom: 10px
+}
+.heck-yes {
+	width: 50%; 
+	border-radius: 0; 
+	font-weight: normal; 
+	font-size: 14px;
+}
+
+
+/* icons */
+img.icon-filter {
+	width: 30px;
+}
+.icon-mailing-list {
+	width: 50px; 
+	margin-bottom: 10px;
+}
+i.fa.fa-search {
+	font-size: 14px; 
+	color: #bbb; 
+	position: relative; 
+	right: 32px;
+}
+.icon-beer {
+	width: 25px; 
+	transform: rotate(20deg); 
+	margin-bottom: 3px;
+	margin-right: 5px;
+}
+
 /* filter by flavors */
 .filter-header {
 	background: #947099
@@ -134,6 +173,19 @@ ul li::before {
 .filter-flavors-row label {
 	padding-left: 4px;
 }
+.col-3 {
+	padding: 2px 0 2px 3px;
+}
+.col-3 label {
+	padding: 0;
+}
+input#search-field {
+	width: 300px; 
+	display: inline-block; 
+	margin: 11px 2px;
+}
+
+
 
 /* range slider stuff */
 div.range-container {
@@ -184,15 +236,6 @@ div.row.ibu-abv-bottom {
     background-color: #584389;
 }
 
-/* join our mailing list */
-div.row.join-list-top {
-	background: #333;
-}
-div.row.join-list-main {
-	background: #844389; 
-	padding: 10px 20px 10px;
-}
-
 /* special definition */
 p.special {
 	font-size: 20px; 
@@ -207,22 +250,9 @@ p.special.fancy {
 	font-weight: bold; 
 	font-size: 20px;
 }
-
-/* icons */
-img.icon-filter {
-	width: 30px;
-}
-i.fa.fa-search {
-	font-size: 14px; 
-	color: #bbb; 
-	position: relative; 
-	right: 32px;
-}
-.icon-beer {
-	width: 25px; 
-	transform: rotate(20deg); 
-	margin-bottom: 3px;
-	margin-right: 5px;
+.special {
+	font-family: 'Shadows Into Light', cursive;
+	letter-spacing: 1.0px;
 }
 
 /* misc */
@@ -235,11 +265,6 @@ b.beer-error {
 	padding: 40px; 
 	display: block;
 }
-input#search-field {
-	width: 300px; 
-	display: inline-block; 
-	margin: 11px 2px;
-}
 footer {
 	margin-top: 50px;
 	color: #555;
@@ -247,10 +272,6 @@ footer {
 .no-results {
 	display: none;
 	padding: 100px;
-}
-.special {
-	font-family: 'Shadows Into Light', cursive;
-	letter-spacing: 1.0px;
 }
 .form-control {
 	font-size: 0.8rem;
@@ -268,4 +289,19 @@ footer {
 }
 .form-group {
 	margin-bottom: 0;
+}
+@media screen and (max-width: 480px) {
+	.food {
+		max-width: 50px;
+		margin: 10px auto;
+	}
+	.story-decoration {
+		border-left: none; 
+		padding-left: 15px; 
+		padding-right: 15px;
+	}
+	p.special {
+		margin-bottom: 30px;
+	}
+	
 }
