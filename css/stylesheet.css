@@ -37,27 +37,6 @@ div, p {
 label {
 	font-size: 0.8rem; 
 }
-.special {
-	font-family: 'Shadows Into Light', cursive;
-	letter-spacing: 1.0px;
-}
-.form-control {
-	font-size: 0.8rem;
-}
-.bg-dark {
-	background-color: #333 !important;
-}
-.dropdown-menu {
-	width: 19rem; 
-	border-radius: 0; 
-	border: 0; 
-	padding: 0; 
-	margin: 0; 
-	margin-left: 14px;
-}
-.form-group {
-	margin-bottom: 0;
-}
 
 
 /* nav bar */
@@ -135,8 +114,6 @@ ul li::before {
     list-style-type: none;
 }
 
-
-
 /* filter by flavors */
 .filter-header {
 	background: #947099
@@ -157,6 +134,18 @@ ul li::before {
 .filter-flavors-row label {
 	padding-left: 4px;
 }
+
+/* range slider stuff */
+div.range-container {
+	width: 300px;
+}
+div.row.ibu-abv-top {
+	background: #947099
+}
+div.row.ibu-abv-bottom {
+	background: #9b82a0	
+}
+
 
 /* pagination only */
 #easyPaginate {
@@ -193,11 +182,9 @@ ul li::before {
 }
 .back-to-top:hover {
     background-color: #584389;
-    /* border-color: #844389; */
 }
 
-
-/* misc */
+/* join our mailing list */
 div.row.join-list-top {
 	background: #333;
 }
@@ -205,42 +192,25 @@ div.row.join-list-main {
 	background: #844389; 
 	padding: 10px 20px 10px;
 }
-.story-decoration {
-	border-left: solid 6px #844389; 
-	padding-left: 15px; 
-	padding-right: 4rem;
+
+/* special definition */
+p.special {
+	font-size: 20px; 
+	color: #844389; 
+	font-weight: bold;
+}
+p.special img {
+	width: 20px;
 }
 p.special.fancy {
 	color: orange; 
 	font-weight: bold; 
 	font-size: 20px;
 }
-b.beer-error {
-	padding: 40px; 
-	display: block;
-}
+
+/* icons */
 img.icon-filter {
 	width: 30px;
-}
-p.special {
-	font-size: 20px; color: #844389; font-weight: bold;
-}
-p.special img {
-	width: 20px;
-}
-div.range-container {
-	width: 300px;
-}
-div.row.ibu-abv-top {
-	background: #947099
-}
-div.row.ibu-abv-bottom {
-	background: #9b82a0	
-}
-input#search-field {
-	width:300px; 
-	display: inline-block; 
-	margin: 11px 2px;
 }
 i.fa.fa-search {
 	font-size: 14px; 
@@ -254,11 +224,48 @@ i.fa.fa-search {
 	margin-bottom: 3px;
 	margin-right: 5px;
 }
+
+/* misc */
+.story-decoration {
+	border-left: solid 6px #844389; 
+	padding-left: 15px; 
+	padding-right: 4rem;
+}
+b.beer-error {
+	padding: 40px; 
+	display: block;
+}
+input#search-field {
+	width: 300px; 
+	display: inline-block; 
+	margin: 11px 2px;
+}
 footer {
 	margin-top: 50px;
+	color: #555;
 }
 .no-results {
 	display: none;
 	padding: 100px;
 }
-
+.special {
+	font-family: 'Shadows Into Light', cursive;
+	letter-spacing: 1.0px;
+}
+.form-control {
+	font-size: 0.8rem;
+}
+.bg-dark {
+	background-color: #333 !important;
+}
+.dropdown-menu {
+	width: 19rem; 
+	border-radius: 0; 
+	border: 0; 
+	padding: 0; 
+	margin: 0; 
+	margin-left: 14px;
+}
+.form-group {
+	margin-bottom: 0;
+}
