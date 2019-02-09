@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Punk Out Beers</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- libs styles -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- google font, better for the beer title orange subheads -->
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet"> 
+
+<!-- rangesliders -->
+<link href="libs/rangeslider/css/ion.rangeSlider.css" rel="stylesheet">
+<link href="libs/rangeslider/css/ion.rangeSlider.skinModern.css" rel="stylesheet">
+
+<!-- my styles -->
+<link href="css/stylesheet.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- MAIN NAVBAR -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-center navbar-custom p-0">
+
+	<div class="container header-splash">
+
+		<a class="navbar-brand mt-1" href="#"><img src="images/icon_beer_mug.svg" class="icon-beer"> Punk Out Beers</a>
+
+		<button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link beers" href="#beers">Our Brews</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link home" href="#">Where To Buy</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link contact" href="#" data-toggle="modal" data-target="#myModal">Contact</a>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</nav>
+
+<div class="container mt-4">
+	<div class="row p-4">
+		<div class="col-sm-8">
+
+			<h2 class="mb-4">Welcome!</h2>
+			
+			<p class="story-decoration">Back in 1992 Phillipe Gonzolaz and Melissa Taylor set off on a mission to create a perfectly balanced beer that would be refreshing, delicious, and infinitely drinkable. Their flagship lager took off and soon after they started experimenting with different styles of beer and more unique flavors and ingredients. Now Punk Out Beers has over 30 awesomely distinct award-winning beers for every pallette.</p>
+
+			<p class="text-center special">Find your inner Punk! <img src="images/icon_rocknroll_hand.svg"></p>
+ 
+		</div>
+		<div class="col-sm-4 text-white p-0">
+
+			<div class="row p-2 join-list-top">
+				<h3 class="m-2">Join Our Mailing List</h2>
+			</div>
+
+			<div class="row join-list-main">
+
+				<div class="form-group text-center">
+
+					<img src="images/icon_mailing_list.svg" style="width: 50px; margin-bottom: 10px;" alt="Mail">
+
+					<label for="email" style="font-size: 12px; line-height: 16px; margin-bottom: 10px" class="text-left">Sign up and we’ll send you info about exclusive beer premieres, festivals we’ll be at, and special promotions!</label>
+					<input type="email" class="form-control" id="email" placeholder="beerafficionado@rockstar.com" name="email" style="font-size: 12px; line-height: 16px; margin-bottom: 10px">
+
+					<button type="submit" class="btn btn-dark" data-toggle="modal" data-target="#myModal" style="width: 50%; border-radius: 0; font-weight: normal; font-size: 14px;">HECK YES!</button>
+
+				</div>
+
+			</div>
+
+		</div>  
+	</div>
+</div>
+
+<!-- SUBMIT REQUEST MODAL FOR NEWSLETTER -->
+<div class="modal fade" id="myModal">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<h4 class="modal-title">Hi there.</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+
+			<div class="modal-body">
+				<p>Thanks for clicking. This isn't a real web site, so it's not all working. If this was a real web site, this would be functional. </p> <p>Did you know that Dan is a big fan of Cisco and Talos? Dan also really likes in-person interviews and discussing front-end development. Just&nbsp;saying.</p>
+			</div>
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- FILTER BAR -->
+
+<a name="beers"></a>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-center navbar-custom mt-5 p-0">
+	<div class="container">
+
+		<a class="navbar-brand" href="#">The Set List</a>
+
+		<button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+			<ul class="navbar-nav">
+				<!-- FILTER DROPDOWN -->
+				<li class="nav-item dropdown">
+
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						<img src="images/icon_filter.svg" class="icon-filter" alt="Filter"> <span class="text-white"><b>FILTER BY</b></span>
+					</a>
+
+					<div class="dropdown-menu">
+
+						<div class="row filter-header">
+							<span class="p-2 text-white">FLAVOR NOTES</span>
+						</div>
+
+						<!-- FILTER TERMS -->
+						<div class="row p-2 filter-flavors-row">
+							<div class="col-4">
+								<input type="checkbox" id="check-hoppy" name="check-hoppy" value="hoppy">
+								<label class="text-white align-middle" for="check-hoppy">Hoppy</label>
+							</div>
+							<div class="col-4">
+								<input type="checkbox" id="check-citrus" name="check-citrus" value="citrus">
+								<label class="text-white align-middle" for="check-citrus">Citrus</label>
+							</div>
+							<div class="col-4">
+								<input type="checkbox" id="check-malty" name="check-malty" value="malty">
+								<label class="text-white align-middle" for="check-malty">Malty</label>
+							</div>
+							<div class="col-4">
+								<input type="checkbox" id="check-bitter" name="check-bitter" value="bitter">
+								<label class="text-white align-middle" for="check-bitter">Bitter</label>
+							</div>
+							<div class="col-4">
+								<input type="checkbox" id="check-fruity" name="check-fruity" value="fruity">
+								<label class="text-white align-middle" for="check-fruity">Fruity</label>
+							</div>
+							<div class="col-4">
+								<input type="checkbox" id="check-toasty" name="check-toasty" value="toasty">
+								<label class="text-white align-middle" for="check-toasty">Toasty</label>
+							</div>
+							<div class="col-4">
+								<input type="checkbox" id="check-sour" name="check-sour" value="sour">
+								<label class="text-white align-middle" for="check-sour">Sour</label>
+							</div>
+							<div class="col-4">
+								<input type="checkbox" id="check-dry" name="check-dry" value="dry">
+								<label class="text-white align-middle" for="check-dry">Dry</label>
+							</div>
+							<div class="col-4">
+								<input type="checkbox" id="check-caramel" name="check-caramel" value="caramel">
+								<label class="text-white align-middle" for="check-caramel">Caramel</label>
+							</div>
+							<div class="col-4">
+								<input type="checkbox" id="check-tart" name="check-tart" value="tart">
+								<label class="text-white align-middle" for="check-tart">Tart</label>
+							</div>
+							<div class="col-4">
+								<input type="checkbox" id="check-crisp" name="check-crisp" value="crisp">
+								<label class="text-white align-middle" for="check-crisp">Crisp</label>
+							</div>
+							<div class="col-4">
+								<input type="checkbox" id="check-toffee" name="check-toffee" value="toffee">
+								<label class="text-white align-middle" for="check-toffee">Toffee</label>
+							</div>
+						</div>
+
+						 <!-- IBU SLIDER -->
+						<div class="row ibu-abv-top">
+							<span class="p-2 text-white">IBU</span>
+						</div>
+						<div class="row p-2 ibu-abv-bottom">
+							<div class="range-container">
+								<input id="ibu-range-slider"></input>
+							</div>
+						</div>                
+
+						<!-- ABV SLIDER -->
+						<div class="row ibu-abv-top">
+							<span class="p-2 text-white">ABV</span>
+						</div>
+						<div class="row p-2 ibu-abv-bottom">
+							<div class="range-container">
+								<input id="abv-range-slider"></input>
+							</div>
+						</div>                
+
+					</div>
+				</li>   
+
+				<li class="nav-item">
+					<div class="form-group">
+
+						<!-- SEARCH/FILTER BAR -->
+						<input type="text" class="form-control" maxlength="20" id="search-field" placeholder="Search for Beer Name or Type">
+						<i class="fa fa-search"></i>
+					</div>
+				</li>
+			 
+			</ul>
+		</div>
+	</div>
+</nav>
+								 
+
+<!-- beer list starts here -->
+<div class="container">
+
+	<div id="beer-area">
+		<!-- BEER ROWS GET INSERTED HERE -->
+
+	</div>
+
+	<div class="no-results">
+		<b>No results.</b>
+	</div>
+
+</div>
+
+
+<footer class="jumbotron text-center mb-0">
+	<p>Made by Dan (the man) Binebrink</p>
+</footer>
+
+
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page"><i class="fa fa-arrow-up"></i></a>
+	    
+      
+
+<!-- jquery and boostrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- pagination -->
+<script src="libs/easypaginate/jquery.easyPaginate.js"></script>
+
+<!-- range slider -->
+<script src="libs/rangeslider/js/ion-rangeSlider/ion.rangeSlider.js"></script>
+
+<!-- start the app -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

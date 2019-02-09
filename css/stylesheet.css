@@ -1,0 +1,264 @@
+@font-face {
+	font-family: 'Bungee';
+	src: url('../fonts/Bungee-Regular.ttf');
+}
+@font-face {
+	font-family: 'Catamaran';
+	src: url('../fonts/Catamaran-Regular.ttf');
+}
+
+/* general styles */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-weight: normal;
+	font-family: 'Catamaran', Arial;
+}
+body {
+	overflow-x: hidden;
+}
+h2 {
+	font-family: 'Bungee';
+	font-size: 1.6rem;  /* trying out rems to be fancy */
+	font-weight: normal;
+}
+h3 {
+	font-family: 'Bungee';
+	font-size: 1.2rem;
+}
+b, strong {
+	font-weight: bold;
+}
+div, p {
+	font-family: 'Catamaran';
+	font-weight: normal;
+}
+label {
+	font-size: 0.8rem; 
+}
+.special {
+	font-family: 'Shadows Into Light', cursive;
+	letter-spacing: 1.0px;
+}
+.form-control {
+	font-size: 0.8rem;
+}
+.bg-dark {
+	background-color: #333 !important;
+}
+.dropdown-menu {
+	width: 19rem; 
+	border-radius: 0; 
+	border: 0; 
+	padding: 0; 
+	margin: 0; 
+	margin-left: 14px;
+}
+.form-group {
+	margin-bottom: 0;
+}
+
+
+/* nav bar */
+nav {
+	max-width: 1150px;
+	margin: 0 auto;
+}
+nav div.container.header-splash {
+	background-image: url('../images/header-splash.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: 0;
+}
+nav ul li {
+	font-size: 14px;
+	list-style-type: none;
+}
+nav ul li::before {
+	content: none;
+}
+.navbar-custom {
+	background-color: #000;
+}
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text {
+	color: #fff;
+	padding: 0;
+}
+.navbar-custom .navbar-nav .nav-link {
+	color: #fff;
+	padding: 1rem 1rem;
+	border-right: solid 1px #333;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.navbar-custom .nav-item.active .nav-link, .navbar-custom .nav-item:hover .nav-link {
+	color: #fff;
+	background-color: #844389; 
+}
+.form-check-label {
+	font-weight: 300;
+	font-size: 14px;
+	color: #fff;
+}
+a.navbar-brand, h2, h3 {
+	font-family: 'Bungee', Arial;
+}
+a.navbar-brand {
+	font-size: 1.5rem;
+}
+
+/* beer row stuff */
+div.row.beer-row {
+	padding: 40px 20px 20px; 
+	border-bottom: dotted 1px #ccc;
+}
+div.row.beer-row img.beer-image {
+	height: 240px; 
+}
+
+
+/* food pairings */
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+ul li {
+	font-size: 14px;
+	font-weight: 600;
+}
+ul li::before {
+    content: "■"; 
+    padding-right: 8px;
+    color: #DD9937; 
+    list-style-type: none;
+}
+
+
+
+/* filter by flavors */
+.filter-header {
+	background: #947099
+}
+.filter-flavors-row {
+	background: #9b82a0
+}
+.filter-flavors-row input[type='checkbox'] {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #555;
+}
+.filter-flavors-row input[type='checkbox']:checked {
+    background: #abd;
+}
+.filter-flavors-row label {
+	padding-left: 4px;
+}
+
+/* pagination only */
+#easyPaginate {
+	width: 300px;
+}
+.easyPaginateNav {
+	text-align: right;
+}
+.easyPaginateNav a {
+	display: inline-block; 
+	padding: 10px 20px;
+	border: solid 1px #dfe6ec;
+	background: #fff;
+	margin: 20px 10px;
+}
+.easyPaginateNav a.current {
+	font-weight: bold;
+	text-decoration: none;
+	padding: 15px 25px;
+	background: #844389;
+	color: #fff;
+}
+
+/* back to top styles */
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #844389;
+	border-color: #844389;
+	outline: none;
+}
+.back-to-top:hover {
+    background-color: #584389;
+    /* border-color: #844389; */
+}
+
+
+/* misc */
+div.row.join-list-top {
+	background: #333;
+}
+div.row.join-list-main {
+	background: #844389; 
+	padding: 10px 20px 10px;
+}
+.story-decoration {
+	border-left: solid 6px #844389; 
+	padding-left: 15px; 
+	padding-right: 4rem;
+}
+p.special.fancy {
+	color: orange; 
+	font-weight: bold; 
+	font-size: 20px;
+}
+b.beer-error {
+	padding: 40px; 
+	display: block;
+}
+img.icon-filter {
+	width: 30px;
+}
+p.special {
+	font-size: 20px; color: #844389; font-weight: bold;
+}
+p.special img {
+	width: 20px;
+}
+div.range-container {
+	width: 300px;
+}
+div.row.ibu-abv-top {
+	background: #947099
+}
+div.row.ibu-abv-bottom {
+	background: #9b82a0	
+}
+input#search-field {
+	width:300px; 
+	display: inline-block; 
+	margin: 11px 2px;
+}
+i.fa.fa-search {
+	font-size: 14px; 
+	color: #bbb; 
+	position: relative; 
+	right: 32px;
+}
+.icon-beer {
+	width: 25px; 
+	transform: rotate(20deg); 
+	margin-bottom: 3px;
+	margin-right: 5px;
+}
+footer {
+	margin-top: 50px;
+}
+.no-results {
+	display: none;
+	padding: 100px;
+}
+
