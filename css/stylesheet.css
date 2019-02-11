@@ -158,7 +158,8 @@ i.fa.fa-search {
 	background: #947099
 }
 .filter-flavors-row {
-	background: #9b82a0
+	background: #9b82a0;
+	padding-right: 2px;
 }
 .filter-flavors-row input[type='checkbox'] {
     width: 18px;
@@ -178,6 +179,7 @@ i.fa.fa-search {
 }
 .col-3 label {
 	padding: 0;
+	font-size: 13px;
 }
 input#search-field {
 	width: 300px; 
@@ -195,7 +197,8 @@ div.row.ibu-abv-top {
 	background: #947099
 }
 div.row.ibu-abv-bottom {
-	background: #9b82a0	
+	background: #9b82a0;
+	padding-left: 15px !important;
 }
 
 
